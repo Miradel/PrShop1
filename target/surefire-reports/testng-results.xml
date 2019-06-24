@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="PrShop" duration-ms="27078" started-at="2019-06-23T22:52:17 EDT" finished-at="2019-06-23T22:52:44 EDT">
+    <groups>
+    </groups>
+    <test name="AccountInfo and product info Test" duration-ms="27078" started-at="2019-06-23T22:52:17 EDT" finished-at="2019-06-23T22:52:44 EDT">
+      <class name="com.prestashop.tests.smoke_tests.Product_information">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prestashop.tests.smoke_tests.Product_information@3dd3bcd]" name="setUp" is-config="true" duration-ms="2400" started-at="2019-06-23T22:52:34 EDT" finished-at="2019-06-23T22:52:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Add_to_cart()[pri:0, instance:com.prestashop.tests.smoke_tests.Product_information@3dd3bcd]" name="Add_to_cart" duration-ms="2069" started-at="2019-06-23T22:52:36 EDT" finished-at="2019-06-23T22:52:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_to_cart -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prestashop.tests.smoke_tests.Product_information@3dd3bcd]" name="setUp" is-config="true" duration-ms="2159" started-at="2019-06-23T22:52:38 EDT" finished-at="2019-06-23T22:52:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Product_information_details()[pri:0, instance:com.prestashop.tests.smoke_tests.Product_information@3dd3bcd]" name="Product_information_details" duration-ms="971" started-at="2019-06-23T22:52:41 EDT" finished-at="2019-06-23T22:52:42 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Product_information_details -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prestashop.tests.smoke_tests.Product_information@3dd3bcd]" name="setUp" is-config="true" duration-ms="2113" started-at="2019-06-23T22:52:42 EDT" finished-at="2019-06-23T22:52:44 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Product_information_price()[pri:0, instance:com.prestashop.tests.smoke_tests.Product_information@3dd3bcd]" name="Product_information_price" duration-ms="787" started-at="2019-06-23T22:52:44 EDT" finished-at="2019-06-23T22:52:44 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Product_information_price -->
+      </class> <!-- com.prestashop.tests.smoke_tests.Product_information -->
+      <class name="com.prestashop.tests.smoke_tests.AcoountInformation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prestashop.tests.smoke_tests.AcoountInformation@12843fce]" name="setUp" is-config="true" duration-ms="4820" started-at="2019-06-23T22:52:17 EDT" finished-at="2019-06-23T22:52:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="My_addresses()[pri:0, instance:com.prestashop.tests.smoke_tests.AcoountInformation@12843fce]" name="My_addresses" duration-ms="1757" started-at="2019-06-23T22:52:22 EDT" finished-at="2019-06-23T22:52:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- My_addresses -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prestashop.tests.smoke_tests.AcoountInformation@12843fce]" name="setUp" is-config="true" duration-ms="3941" started-at="2019-06-23T22:52:24 EDT" finished-at="2019-06-23T22:52:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="My_personal_information()[pri:0, instance:com.prestashop.tests.smoke_tests.AcoountInformation@12843fce]" name="My_personal_information" duration-ms="1820" started-at="2019-06-23T22:52:28 EDT" finished-at="2019-06-23T22:52:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- My_personal_information -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prestashop.tests.smoke_tests.AcoountInformation@12843fce]" name="setUp" is-config="true" duration-ms="4186" started-at="2019-06-23T22:52:30 EDT" finished-at="2019-06-23T22:52:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verfyTitleAndUserName()[pri:0, instance:com.prestashop.tests.smoke_tests.AcoountInformation@12843fce]" name="verfyTitleAndUserName" duration-ms="28" started-at="2019-06-23T22:52:34 EDT" finished-at="2019-06-23T22:52:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfyTitleAndUserName -->
+      </class> <!-- com.prestashop.tests.smoke_tests.AcoountInformation -->
+    </test> <!-- AccountInfo and product info Test -->
+  </suite> <!-- PrShop -->
+</testng-results>

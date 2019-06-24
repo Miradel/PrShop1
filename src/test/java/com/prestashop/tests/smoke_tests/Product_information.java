@@ -87,7 +87,7 @@ public class Product_information {
         String ExpectedDefaultSize = "S";
         Assert.assertEquals(ExpectedDefaultSize, defaultSelectedSize);
 
-        //6.Verify that size options are S, M, LProduct information–Add to cart:
+        //6.Verify that size options are S, M, L Product information–Add to cart:
         List<String> expexctedSizeOptions = new ArrayList<>();
         expexctedSizeOptions.add("S");
         expexctedSizeOptions.add("M");

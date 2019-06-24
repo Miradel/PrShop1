@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PrShop" verbose="2">
+    
+    <test name="AccountInfo and product info Test">
+        <classes>
+            <class name="com.prestashop.tests.smoke_tests.AcoountInformation"></class>
+            <class name="com.prestashop.tests.smoke_tests.Product_information"></class>
+        </classes>
+    </test>
+    
+    
+</suite>
