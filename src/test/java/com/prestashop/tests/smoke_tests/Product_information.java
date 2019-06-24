@@ -5,7 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,10 +32,12 @@ public class Product_information {
         // product = driver.findElement(By.partialLinkText("Faded Short"));
         product = driver.findElement(By.xpath("//a[@class='product-name']"));
         productName = product.getText();
+        System.out.println(productName);
 
         price = driver.findElement(By.xpath("(//div[@class='content_price'])[2]/span"));
         // price = driver.findElement(By.xpath("//*[@id=\"homefeatured\"]/li[1]/div/div[2]/div[1]/span"));
         productPrice = price.getText();
+
 
     }
 
@@ -109,12 +113,27 @@ public class Product_information {
 
         //8.Verify confirmation message “Product successfully added to your shopping cart”
         String expectedConMessage = "Product successfully added to your shopping cart";
-        WebElement actualMes = driver.findElement(By.xpath("//div[@class='layer_cart_product col-xs-12 col-md-6']//h2"));
+
+       WebElement actualMes = driver.findElement(By.xpath("//div[@class='layer_cart_product col-xs-12 col-md-6']//h2"));
+
+
         //actualMes.click();
+       WebDriverWait wait = new WebDriverWait(driver,2);
+       wait.until(ExpectedConditions.visibilityOf(actualMes));
+
+
+
+//        try {
+//            Thread.sleep(4000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         String actualConMessage = actualMes.getText();
+        System.out.println("--------------------------");
+
 
         System.out.println(actualConMessage);
-        //   Assert.assertEquals(expectedConMessage,actualConMessage);
+         Assert.assertEquals(expectedConMessage,actualConMessage);
 
 
         // 9.that default quantity is1
@@ -124,14 +143,16 @@ public class Product_information {
         WebElement defaultQuan = driver.findElement(By.xpath("//span[@id='layer_cart_product_quantity']"));
         String dq = defaultQuan.getText();
         System.out.println(dq);
-        // Assert.assertEquals(expectedQuan,dq);
+         Assert.assertEquals(expectedQuan,dq);
 
         // 10.Verify that defaultsize is S
         String expectedSize = "S";
         String actualSizeeee = driver.findElement(By.xpath("//span[@id=\"layer_cart_product_attributes\"]")).getText();
-        // String act = actualSizeeee.substring(actualSizeeee.length()-1);
-        // System.out.println(act);
-        // Assert.assertEquals(expectedSize,act);
+        System.out.println(actualSizeeee);
+         String act = actualSizeeee.substring(actualSizeeee.length()-1);
+         System.out.println(act);
+         Assert.assertEquals(expectedSize,act);
+         Assert.assertTrue(actualSizeeee.contains(expectedSize));
 
         //11.Verify that same name and price displayed as on the home page
         String expectedName = driver.findElement(By.id("layer_cart_product_title")).getText();
